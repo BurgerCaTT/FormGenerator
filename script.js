@@ -5,6 +5,7 @@ async function exportDOCX() {
 
   const zip = new PizZip(content);
   const doc = new window.docxtemplater(zip, {
+     delimiters: { start: '[[', end: ']]' },
     paragraphLoop: true,
     linebreaks: true
   });
