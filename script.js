@@ -1,6 +1,6 @@
 async function exportDOCX() {
 
-  const res = await fetch("Chuany.docx");
+  const res = await fetch("MauChuanyfinal.docx");
   const content = await res.arrayBuffer();
 
   const zip = new PizZip(content);
@@ -19,14 +19,21 @@ async function exportDOCX() {
 
     F10: v("f10"),
     F11: v("f11"),
+
     F20: v("f20"),
     F21: v("f21"),
+
     F30: v("f30"),
     F31: v("f31"),
+
     F40: v("f40"),
     F41: v("f41"),
+
     F50: v("f50"),
-    F51: v("f51")
+    F51: v("f51"),
+
+    F60: v("f60"),
+    F61: v("f61")
   });
 
   try {
