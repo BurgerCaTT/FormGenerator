@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+  margin: 0;
+  padding: 30px;
+  color: #222;
+}
+
+/* ===== KHUNG FORM ===== */
+body > div {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 25px 30px;
+  border: 1px solid #dcdcdc;
+}
+
+/* ===== TIÊU ĐỀ ===== */
+h3 {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ===== INPUT ===== */
+input,
+select {
+  height: 32px;
+  padding: 4px 8px;
+  font-size: 14px;
+  border: 1px solid #bfbfbf;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #4a7bd0;
+}
+
+/* ===== KÍCH THƯỚC ===== */
+#SO_QD,
+#CHI_NHANH {
+  width: 260px;
+}
+
+#NGAY,
+#THANG {
+  width: 50px;
+  text-align: center;
+}
+
+#NAM {
+  width: 80px;
+  text-align: center;
+}
+
+/* ===== DÒNG THÀNH VIÊN ===== */
+[id^="row"] {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+[id^="row"] input {
+  width: 180px;
+}
+
+/* ===== BUTTON ===== */
+button {
+  height: 34px;
+  padding: 0 14px;
+  font-size: 14px;
+  border: 1px solid #4a7bd0;
+  background: #4a7bd0;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3d6ab8;
+}
+
+/* ===== HR ===== */
+hr {
+  border: none;
+  height: 1px;
+  background: #dcdcdc;
+  margin: 20px 0;
+}
+
+/* ===== FILE ===== */
+input[type="file"] {
+  border: none;
+  padding: 0;
+}
