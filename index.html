@@ -17,21 +17,48 @@
 
   Chi nhánh: <input id="CHI_NHANH"><br><br>
 
-  F10: <input id="f10"> --- F11: <input id="f11"><br>
-  F20: <input id="f20"> --- F21: <input id="f21"><br>
-  F30: <input id="f30"> --- F31: <input id="f31"><br>
-  F40: <input id="f40"> --- F41: <input id="f41"><br>
-  F50: <input id="f50"> --- F51: <input id="f51"><br>
-  F60: <input id="f60"> --- F61: <input id="f61"><br><br>
+  <div id="row1">
+    F10: <input id="f10"> --- F11: <input id="f11"> --- F12: <input id="f12"><br>
+  </div>
+  <div id="row2">
+    F20: <input id="f20"> --- F21: <input id="f21"> --- F22: <input id="f22"><br>
+  </div>
+  <div id="row3">
+    F30: <input id="f30"> --- F31: <input id="f31"> --- F32: <input id="f32"><br>
+  </div>
+  <div id="row4">
+    F40: <input id="f40"> --- F41: <input id="f41"> --- F42: <input id="f42"><br>
+  </div>
+  <div id="row5">
+    F50: <input id="f50"> --- F51: <input id="f51"> --- F52: <input id="f52"><br>
+  </div>
+  <div id="row6">
+    F60: <input id="f60"> --- F61: <input id="f61"> --- F62: <input id="f62"><br>
+  </div>
 
-  <button onclick="exportDOCX()">Xuất DOCX</button>
+  <br>
+  
+  <button type="button" onclick="buildRowsFromManual(); exportDOCX();">
+  Xuất DOCX (nhập tay)
+  </button>
+
+
+  <hr>
+
+  <input type="file" id="excelFile" accept=".xlsx">
+  <button onclick="importExcelToForm()">Upload Excel</button><br><br>
+
+  <select id="sheetSelect" style="display:none"></select>
+  <button id="btnExportBranch" style="display:none" onclick="exportByBranch()">
+    Xuất theo Chi nhánh
+  </button>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/pizzip@3.1.7/dist/pizzip.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docxtemplater@3.42.0/build/docxtemplater.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 
 <script src="script.js"></script>
-
 </body>
 </html>
